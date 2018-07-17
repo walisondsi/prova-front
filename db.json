@@ -1,10 +1,10 @@
-[
+{
   "perguntas": [
-		{
+	  	{
 			"descricao": "Qual o seu comportamento em relação aos seus investimentos?",
 			"ordem": 1,
-			"alternativas": [
-				{
+			"alternativas": [{
+				
 					"descricao": "Ganhar mais dinheiro assumindo riscos agressivos"
 				},
 				{
@@ -45,8 +45,8 @@
 				}
 			]
 		}
-	],
+  ],
   "profile": {
     "name": "typicode"
   }
-]
+}  
