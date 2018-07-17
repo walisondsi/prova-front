@@ -1,11 +1,56 @@
-{
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
+[
+	"perguntas" : [
+		
+		{
+			"descricao": "Qual o seu comportamento em relação aos seus investimentos?",
+			"ordem": 1,
+			"alternativas": [
+				{
+					"descricao": "Ganhar mais dinheiro assumindo riscos agressivos"
+				},
+				{
+					"descricao": "Ganhar mais dinheiro assumindo riscos moderados"
+				},
+				{
+					"descricao": "Preservar meu dinheiro sem correr riscos"
+				}
+				
+			]
+		},
+		{
+			"descricao": "Por quanto tempo você deseja manter os seus investimentos?",
+			"ordem": 2,
+			"alternativas": [
+				{
+					"descricao": "Até 1 ano"
+				},
+				{
+					"descricao": "De 1 a 3 anos"
+				},
+				{
+					"descricao": "De de 3 a 5 anos"
+				}
+				
+			]
+		},
+		{
+			"descricao": "Quantos % desses investimentos você pode precisar em um ano?",
+			"ordem": 3,
+			"alternativas": [
+				{
+					"descricao": "Acima de 75%"
+				},
+				{
+					"descricao": "Até 25%"
+				},
+				{
+					"descricao": "De 26% a 74%"
+				}
+				
+			]
+		},
+	],
   "profile": {
     "name": "typicode"
   }
-}
+]
