@@ -1,6 +1,6 @@
 {
-  "perguntas": [
-	  	{
+  "perguntas": {
+	  	"1" : {
 			"descricao": "Qual o seu comportamento em relação aos seus investimentos?",
 			"ordem": 1,
 			"alternativas": [{
@@ -15,7 +15,7 @@
 				}
 			]
 		},
-		{
+		"2" : {
 			"descricao": "Por quanto tempo você deseja manter os seus investimentos?",
 			"ordem": 2,
 			"alternativas": [
@@ -30,7 +30,7 @@
 				}
 			]
 		},
-		{
+		"3" : {
 			"descricao": "Quantos % desses investimentos você pode precisar em um ano?",
 			"ordem": 3,
 			"alternativas": [
@@ -45,7 +45,7 @@
 				}
 			]
 		}
-  ],
+	},
   "profile": {
     "name": "typicode"
   }
