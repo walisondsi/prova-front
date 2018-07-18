@@ -53,10 +53,6 @@
 					"valor": 9
 				}
 			]
-		},
-		{
-			"descricao": "Qual sua familiaridade com os tipos de investimentos abaixo? Leve em consideração o valor aplicado nos últimos 2 anos.",
-			"ordem": 4
 		}
   ],
   "select": [
