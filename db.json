@@ -59,6 +59,20 @@
 			"ordem": 4
 		}
   ],
+  "select": [
+	  {
+		"descricao": "Nunca operei"
+	  },
+	  {
+		"descricao": "Opero pouco e não tenho familiaridade"
+	  },
+	  {
+		"descricao": "Opero eventualmente e conheço os riscos associados"
+	  },
+	  {
+		"descricao": "Opero frequentemente e conheço os riscos associados"
+	  }
+  ],
 
   "profile": {
     "name": "typicode"
