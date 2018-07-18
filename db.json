@@ -70,17 +70,17 @@
 	  }
   ],
 
-  "teste": {
-
+  "teste": [
+{
 		"pergunta1": {
 			"descricao": "teste"
 		},
 		"pergunta2": {
 			"descricao": "teste2"
 		}
-		
+	}
 
-  },
+	],
 
   "profile": {
     "name": "typicode"
