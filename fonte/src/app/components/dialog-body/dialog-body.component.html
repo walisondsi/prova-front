@@ -1,0 +1,16 @@
+<div class="titulo">
+    <span>TERMO</span>
+</div>
+<br/>
+<div class="content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet
+        <br/>
+        <mat-checkbox [(ngModel)]="item" checked="!item">Li e aceito os termos e condições acima</mat-checkbox>
+</div>
+<div  mat-dialog-actions align="center">
+        <button mat-raised-button 
+        [disabled]="!item" 
+        color="warn" 
+        [mat-dialog-close]="true"
+        routerLink="/sucesso">OK, ENTENDI</button>
+</div>

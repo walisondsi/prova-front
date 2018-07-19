@@ -1,0 +1,10 @@
+.block {
+    width: 80%;
+    text-align:center;
+    margin:0 auto;
+}
+
+.titulo {
+    color: #73a;
+    font-family: Arial, Helvetica, sans-serif;
+}

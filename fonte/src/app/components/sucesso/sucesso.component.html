@@ -1,0 +1,25 @@
+
+<div class="block">
+  <img src="../assets/success.png"/><br/>
+  <span class="titulo">
+    Confira o resultado de sua última pesquisa
+  </span>
+  <br/><br/>
+
+<mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+    <ng-container matColumnDef="pergunta">
+        <mat-header-cell *matHeaderCellDef>Pergunta</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.pergunta}}</mat-cell>
+      </ng-container>
+      <ng-container matColumnDef="resposta">
+        <mat-header-cell *matHeaderCellDef>Resposta</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{element.resposta}}</mat-cell>
+      </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+</mat-table><br/><br/>
+<button routerLink="/inicial" mat-stroked-button color="primary">Início</button>
+</div>

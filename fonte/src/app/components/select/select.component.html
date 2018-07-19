@@ -1,0 +1,6 @@
+
+<mat-select  [(ngModel)]="select_value" placeholder="Selecione uma opção">
+  <mat-option *ngFor="let sel of selects" [value]="sel.descricao">
+    {{sel.descricao}}
+  </mat-option>
+</mat-select>

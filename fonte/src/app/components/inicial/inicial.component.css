@@ -1,0 +1,18 @@
+span {
+    color: #696969;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.subtitulo {
+    color: darkslateblue;
+    font-weight: bold;
+}
+
+.margem1 {
+    padding: 10px;
+}
+
+.margem2 {
+    padding-top: 30px;
+}

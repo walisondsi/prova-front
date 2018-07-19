@@ -1,0 +1,112 @@
+<div class="block">
+<div class="margen">
+    <span class="titulo">PERFIL DO INVESTIDOR - QUESTIONÁRIO</span>
+</div>
+
+<div>
+
+    <div *ngIf="alternativas[0]">
+        <span>{{alternativas[0].ordem}} - {{alternativas[0].descricao}}</span>
+        <mat-grid-list cols="3" class="margen">
+            <mat-radio-group [(ngModel)]="escolha0">
+                <mat-radio-button [name]='a0.descricao' *ngFor="let a0 of alternativas[0].alternativas" [value]='a0.descricao'>
+                    {{a0.descricao}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </mat-grid-list>
+        <hr>
+    </div>    
+
+    <div *ngIf="alternativas[1]">
+        <span>{{alternativas[1].ordem}} - {{alternativas[1].descricao}}</span>
+        <mat-grid-list cols="3" class="margen">
+            <mat-radio-group [(ngModel)]="escolha1">
+                <mat-radio-button [name]='a1.descricao' *ngFor="let a1 of alternativas[1].alternativas" [value]='a1.descricao'>
+                    {{a1.descricao}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </mat-grid-list>
+        <hr>
+    </div>  
+
+    <div *ngIf="alternativas[2]">
+        <span>{{alternativas[2].ordem}} - {{alternativas[2].descricao}}</span>
+        <mat-grid-list cols="3" class="margen">
+            <mat-radio-group [(ngModel)]="escolha2">
+                <mat-radio-button [name]='a2.descricao' *ngFor="let a2 of alternativas[2].alternativas" [value]='a2.descricao'>
+                    {{a2.descricao}}
+                </mat-radio-button>
+            </mat-radio-group>
+        </mat-grid-list>
+        <hr>
+    </div>  
+
+
+    <!--<div *ngFor="let enum of alternativas">
+        <span>{{enum.ordem}} - {{enum.descricao}}</span>
+        <mat-grid-list cols="3" class="margen">
+            <mat-radio-group [(ngModel)]="escolhas">
+                <mat-radio-button [name]="enum.ordem" [id]="enum2.valor" (change)="change(enum, enum2)" *ngFor="let enum2 of enum.alternativas" [value]='enum2.valor'>
+                    {{enum2.descricao}}
+                </mat-radio-button>
+            </mat-radio-group>
+          </mat-grid-list>
+          <hr>
+  </div>-->
+
+  <div>
+  <span>
+        4 - Qual sua familiaridade com os tipos de investimentos abaixo? Leve em consideração o valor aplicado nos últimos 2 anos.
+  </span>
+  <br/>
+  <mat-grid-list cols="2" rowHeight="7:1">
+    <mat-grid-tile>
+        <div>
+            <div>
+                <span class="titulo">TITULO DE RENDA FIXA OU TESOURO DIRETO</span>
+            </div>
+            <div class="selectOption">
+                <app-select></app-select>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+            <div>
+                <div>
+                    <span class="titulo">FUNDOS DE INVESTIMENTO</span>
+                </div>
+                <div class="selectOption">
+                    <app-select></app-select>
+                </div>
+            </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+            <div>
+                <div>
+                    <span class="titulo">AÇÕES A VISTA</span>
+                </div>
+                <div class="selectOption">
+                    <app-select></app-select>
+                </div>
+            </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+            <div>
+                <div>
+                    <span class="titulo">ALUGUEL DE AÇÕES, TERMOS, OPÇÕES E FUTUROS</span>
+                </div>
+                <div class="selectOption">
+                    <app-select></app-select>
+                </div>
+            </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+    <div class="button-row">
+        <button routerLink="/inicial" mat-stroked-button color="primary">Voltar</button>
+        <button routerLink="/sucesso" (click)="salvar()" [disabled]="!validaCampos()" mat-stroked-button color="primary">Salvar</button>
+      </div>
+    </div>
+
+  </div>
