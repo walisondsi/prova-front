@@ -1,5 +1,18 @@
 # Questionario
 
+Foi utilizado como serviço rest neste projeto a seguinte ferramenta:
+https://github.com/typicode/json-server
+
+Caso o mesmo não esteja instalado, instale com o seguinte comando:
+npm install -g json-server
+
+Para iniciar o serviço rode o seguinte comando, na raiz do repositório:
+json-server --watch db.json
+
+O mesmo ficará disponivel no seguinte endereço:
+http://localhost:3000/
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
